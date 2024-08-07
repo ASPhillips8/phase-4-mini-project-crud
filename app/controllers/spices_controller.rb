@@ -19,6 +19,7 @@ class SpicesController < ApplicationController
   def destroy
     spice = find_spice
     spice.destroy
+    head :no_content
   end
 
   private
